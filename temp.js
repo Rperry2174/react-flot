@@ -20,6 +20,8 @@ var ReactFlot = (function (_super) {
     };
     ReactFlot.prototype.componentWillReceiveProps = function (nextProps) {
     };
+    ReactFlot.prototype.componentDidMount = function (prevProps) {
+    };
     ReactFlot.prototype.draw = function (event, data) {
     };
     ReactFlot.prototype.render = function () {

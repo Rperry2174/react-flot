@@ -11,6 +11,7 @@ export default class ReactFlot extends React.Component<Props, any> {
     
     componentDidMount(): void;
     componentWillReceiveProps(nextProps: any): void;
+    componentDidUpdate(prevProps: any): void;
     draw(event: any, data: any): void;
     render(): any;
 }

@@ -20,10 +20,17 @@ class ReactFlot extends Component {
   }
 
   componentDidMount() {
+    console.log('testing console logs')
     this.draw();
   }
 
   componentWillReceiveProps(nextProps) {
+    if (!equal(nextProps.data, this.props.data) || !equal(nextProps.options, this.props.options)) {
+      this.draw(null, nextProps);
+    }
+  }
+
+  componentDidUpdate(prevProps) {
     if (!equal(nextProps.data, this.props.data) || !equal(nextProps.options, this.props.options)) {
       this.draw(null, nextProps);
     }
